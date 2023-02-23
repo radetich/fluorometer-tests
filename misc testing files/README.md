@@ -1,2 +1,2 @@
-# fluorometer-tests
-made to move tests and test code from fluorometer-base. These tests will validate, display, and explain data results.
+# Misc Testing Files
+Various testing scripts and files that were found useful while debugging the firmware of our device.

@@ -1,2 +1,2 @@
-# fluorometer-tests
-made to move tests and test code from fluorometer-base. These tests will validate, display, and explain data results.
+# Testing Logs
+This folder will contain text documents logging major tests.
