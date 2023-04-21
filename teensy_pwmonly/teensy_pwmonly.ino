@@ -30,21 +30,18 @@ void setup()
 
 void loop() 
 {
+    //turn led on and set flag variable. This allows us to begin at 57/255 of our 4 KHz PWM and remain at that through capture.
+    //this should be about 20% of our pwm or about 1.00185882353 KHz
 
+    analogWrite(ledPin, 127);
+    analogWriteFrequency(ledPin, 1000);
+    digitalWrite(OpAMP, HIGH);
+    
+    pwm_on = 1;
 
   while(1)
   {
     timestep = 0;
-    if(pwm_on == 0)
-    {
-      analogWrite(OpAMP, HIGH);
-      //turn led on and set flag variable. This allows us to begin at 57/255 of our 4 KHz PWM and remain at that through capture.
-      //this should be about 20% of our pwm or about 1.00185882353 KHz
-
-      analogWrite(ledPin, 57);
-      
-      pwm_on = 1;
-    }
     //orange debug light
     //analogWrite(boardLedPin, 255);
     //We are transferring! begin transfer.
